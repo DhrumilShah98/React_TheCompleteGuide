@@ -161,3 +161,14 @@ m.printRole()
 console.log(m.gender);
 m.printGender();
 ```
+```
+Output:
+Dhrumil
+My name is Dhrumil
+Male
+My gender is Male
+Snipes
+I Snipe!!!
+Female
+My gender is Female
+```
