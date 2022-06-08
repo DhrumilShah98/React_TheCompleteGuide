@@ -54,3 +54,39 @@ name = 'Dhrumil Shah';
 
 TypeError: Assignment to constant variable.
 ```
+
+### 2. Arrow Functions
+
+```js
+// Arrow functions eliminate 'function' keyword from the syntax.
+// The syntax of an arrow function is as below:
+// const myFun = (args) => { 
+//     statement 1;
+//     ...
+//     return something;
+// }
+// Also, using arrow functions, there are no more issues with the 'this' keyword. It is context aware.
+
+// Normal function
+function printMyName(name) {
+    console.log(name);
+}
+printMyName('Dhrumil');
+
+// Arrow function
+const printName = (name) => {
+    console.log(name);
+}
+printName('Dhrumil');
+
+// Double a number 
+// const doubleTheNum = (number) => { return number * 2; }
+const doubleTheNum = number => number * 2;
+console.log(doubleTheNum(4));
+```
+```
+Output:
+Dhrumil
+Dhrumil
+8
+```
