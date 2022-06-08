@@ -172,3 +172,29 @@ I Snipe!!!
 Female
 My gender is Female
 ```
+
+### 5. Understanding 'Rest' and 'Spread' operators
+```js
+// Symbol - ...
+// Spread - Spread operator is used to split array elements or object properties.
+const oldEles = [1, 2, 3, 4, 5];
+const newEles = [8, 9, 10];
+const eles = [...oldEles, 6, 7, ...newEles, 11, 12, 13];
+console.log(eles);
+
+const oldObj = { name: 'Dhrumil', age: 24};
+const newObj = {...oldObj, gender: 'Male'};
+console.log(newObj);
+
+// Rest - Used to merge a list of function arguments into an array.
+const sortArgs = (...args) => {
+    return args.sort((a, b) => a - b);
+}
+console.log(sortArgs(4, 2, 8, 1, 13, 11));
+```
+```
+Output:
+[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+{ name: 'Dhrumil', age: 24, gender: 'Male' }
+[ 1, 2, 4, 8, 11, 13 ]
+```
