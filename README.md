@@ -106,4 +106,6 @@ Dhrumil
 // import person from './person.js';
 // import prsn from './person.js'; // Name doesn't matter. Imports default and only export of the file name in the receiving file is up to us.
 // import { clean, baseData } from './utility.js';
+// import { clean as CL, baseData as BD } from './utility.js'; // Named Import
+// import * as bundled from from './utility.js'; // Named Import
 ```
