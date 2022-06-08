@@ -109,3 +109,55 @@ Dhrumil
 // import { clean as CL, baseData as BD } from './utility.js'; // Named Import
 // import * as bundled from from './utility.js'; // Named Import
 ```
+
+### 4. Classes, Properties, and Methods
+```js
+// Properties are like 'variables' attached to classes/objects.
+// Methods are like 'functions' attached to classes/objects.
+// ES6
+// constructor() { this.property = 'value' }
+// ES7
+// propery = 'value'
+
+// ES6
+// method() { ... }
+// ES7
+// method = () => { ... }
+class Human {
+    constructor() {
+        this.gender = 'Male';
+    }
+    printGender() {
+        console.log(`My gender is ${this.gender}`);
+    }
+}
+
+class Person extends Human {
+    constructor() {
+        super();
+        this.name = 'Dhrumil';
+    }
+    printName() {
+        console.log(`My name is ${this.name}`);
+    }
+};
+
+class Mutant extends Human {
+    name = 'Snipes';
+    gender = 'Female';
+    printRole = () => {
+        console.log(`I Snipe!!!`);
+    }
+}
+const p = new Person();
+console.log(p.name);
+p.printName()
+console.log(p.gender);
+p.printGender();
+
+const m = new Mutant();
+console.log(m.name);
+m.printRole()
+console.log(m.gender);
+m.printGender();
+```
