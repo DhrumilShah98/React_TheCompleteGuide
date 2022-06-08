@@ -225,3 +225,38 @@ A: 1, B: 2, C: 3
 { name: 'Dhrumil', age: 24, gender: 'Male' }
 Name is Dhrumil
 ```
+
+### 7. Reference and Primitive Types Refresher
+```js
+// Arrays and Objects are always call by reference.
+// Numbers, Strings, Booleans are always call by value.
+
+// Value types (Copy the actual value from one variable to another).
+let num1 = 1;
+let num2 = num1;
+console.log(`num1 is ${num1}`);
+console.log(`num2 is ${num2}`);
+num2 = 2;
+console.log(`num1 is ${num1}`);
+console.log(`num2 is ${num2}`);
+
+// Reference types (Variables will refer to same array or object)
+const person = { name: 'Dhrumil' }
+const secondPerson = person;
+console.log(`person name is ${person.name}`);
+console.log(`secondPerson name is ${secondPerson.name}`);
+secondPerson.name = 'Dhrumil Shah'
+console.log(`person name is ${person.name}`);
+console.log(`secondPerson name is ${secondPerson.name}`);
+```
+```
+Output:
+num1 is 1
+num2 is 1
+num1 is 1
+num2 is 2
+person name is Dhrumil
+secondPerson name is Dhrumil
+person name is Dhrumil Shah
+secondPerson name is Dhrumil Shah
+```
