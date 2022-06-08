@@ -17,7 +17,6 @@
 ## Next-Gen JavaScript (A Refresher)
 
 ### 1. Understanding 'let' and 'const'
-
 ```js
 // With ES6, two keywords were introduced, 'let' & 'const'. 
 // 'var' still works but it is highly encouraged that we use 'let' & 'const'.
@@ -56,7 +55,6 @@ TypeError: Assignment to constant variable.
 ```
 
 ### 2. Arrow Functions
-
 ```js
 // Arrow functions eliminate 'function' keyword from the syntax.
 // The syntax of an arrow function is as below:
@@ -89,4 +87,23 @@ Output:
 Dhrumil
 Dhrumil
 8
+```
+
+### 3. Exports & Imports (Modules)
+``` js
+// File - person.js
+// ----------------
+// const person = { name 'Dhrumil' };
+// export default person;
+
+// File - utility.js
+// -----------------
+// export const clean = () => { ... };
+// export const baseData = 10;
+
+// File - app.js
+// -------------
+// import person from './person.js';
+// import prsn from './person.js'; // Name doesn't matter. Imports default and only export of the file name in the receiving file is up to us.
+// import { clean, baseData } from './utility.js';
 ```
