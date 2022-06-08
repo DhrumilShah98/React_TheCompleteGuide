@@ -13,3 +13,44 @@
 ## ReactJS Alternatives
 - Angular - Complete component-based UI framework, packed with features. Uses TypeScript. Can be overkill for smaller projects.
 - Vue.js - Complete component-based UI framrwork, includes more core features. A bit less popular than React & Angular.
+
+## Next-Gen JavaScript (A Refresher)
+
+### 1. Understanding 'let' and 'const'
+
+```js
+// With ES6, two keywords were introduced, 'let' & 'const'. 
+// 'var' still works but it is highly encouraged that we use 'let' & 'const'.
+// 'let': Variable value & 'const': Constant value.
+
+// 'var'
+var myName = 'Dhrumil';
+console.log(myName);
+myName = 'Dhrumil Shah';
+console.log(myName);
+
+// 'let'
+let myFullName = 'Dhrumil';
+console.log(myFullName);
+myFullName = 'Dhrumil Shah';
+console.log(myName);
+
+// 'const'
+const name = 'Dhrumil';
+console.log(name);
+name = 'Dhrumil Shah';
+console.log(name);
+```
+```
+Output:
+Dhrumil
+Dhrumil Shah
+Dhrumil
+Dhrumil Shah
+Dhrumil
+/tmp/GUqkPHsmUH.js:22
+name = 'Dhrumil Shah';
+     ^
+
+TypeError: Assignment to constant variable.
+```
