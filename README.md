@@ -198,3 +198,30 @@ Output:
 { name: 'Dhrumil', age: 24, gender: 'Male' }
 [ 1, 2, 4, 8, 11, 13 ]
 ```
+
+### 6. Destructuring Array elements and Object properties
+```js
+// Destructuring
+// Easily extract array elements or object properties and store them in variables.
+// Array Destructuring
+const oldEles = [1, 2, 3, 4, 5];
+const newEles = [8, 9, 10];
+const eles = [...oldEles, 6, 7, ...newEles, 11, 12, 13];
+console.log(eles);
+const [a, b, c] = eles;
+console.log(`A: ${a}, B: ${b}, C: ${c}`);
+
+// Object Destructuring
+const oldObj = { name: 'Dhrumil', age: 24};
+const newObj = {...oldObj, gender: 'Male'};
+console.log(newObj);
+const { name } = newObj;
+console.log(`Name is ${name}`);
+```
+```
+Output:
+[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+A: 1, B: 2, C: 3
+{ name: 'Dhrumil', age: 24, gender: 'Male' }
+Name is Dhrumil
+```
