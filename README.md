@@ -12,11 +12,18 @@
 
 ## ReactJS Alternatives
 - Angular - Complete component-based UI framework, packed with features. Uses TypeScript. Can be overkill for smaller projects.
-- Vue.js - Complete component-based UI framrwork, includes more core features. A bit less popular than React & Angular.
+- Vue.js - Complete component-based UI framework, includes more core features. A bit less popular than React & Angular.
 
 ## Next-Gen JavaScript (A Refresher)
+1. Understanding 'let' and 'const'
+2. Arrow Functions
+3. Exports & Imports (Modules)
+4. Classes, Properties, and Methods
+5. Understanding 'Rest' and 'Spread' operators
+6. Destructuring Array elements and Object properties
+7. Reference and Primitive Types Refresher
 
-### 1. Understanding 'let' and 'const'
+## 1. Understanding 'let' and 'const'
 ```js
 // With ES6, two keywords were introduced, 'let' & 'const'. 
 // 'var' still works but it is highly encouraged that we use 'let' & 'const'.
