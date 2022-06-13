@@ -5,6 +5,11 @@
 - Declarative, component (Class based or Function based) focused approach.
 - React.js - Lean and focused component based UI library. Certain features (e.g., routing) are added via community packages.
 
+## What problem ReactJS solves?
+- Traditionally, in web apps, when we click a link, we wait for a page to load. We click a button and wait for some action to complete.
+- Browser (E.g., Chrome, Firefox, Edge, etc...) requests a web page from a server and then, the server returns HTML page in response.
+- In React, server only sends one HTML page, thereafter, React takes over and controls the UI.
+
 ## SPAs (Single Page Applications)
 - React can be used to control parts of HTML or entire pages.
 - React can be used to control entire frontend of a web application.
