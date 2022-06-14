@@ -272,3 +272,18 @@ secondPerson name is Dhrumil
 person name is Dhrumil Shah
 secondPerson name is Dhrumil Shah
 ```
+
+## Create React App
+- **Create React App** is a comfortable environment for learning React, and its the best way to start building a new single-page application in React. It sets up our development environment so that we can use the latest JavaScript features, provides a nice development experience, and optimizes our app for production. 
+- Requirement: Node >= 10.16 and npm >= 5.6 on our machine
+- To create a project, run:
+
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+- **npx** is a package runner tool that comes with npm 5.2+
+- Create React App doesn't handle backend logic or databases; it just creates a frontend build pipeline, so that we can use it with any backend we want. Under the hood, it uses **Babel** and **webpack**, but we don't need to know anything about them.
+- When we are ready to deploy to production, running **npm run build** will create an optimized build of our app in the **build** folder.
